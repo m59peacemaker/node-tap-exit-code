@@ -1,0 +1,17 @@
+TAP version 13
+
+# shoots the sheriff and the deputy
+ok 1 shot the sheriff
+not ok 2 did not shoot the deputy
+
+I say
+# I shot the sheriff
+ok 3
+
+# the bucket goes to the well
+not ok 4 bottom dropped out
+  ---
+  when: one day
+  ...
+
+1..4

@@ -1,0 +1,10 @@
+TAP version 13
+
+# stuff
+ok 1
+ok 2 abc
+
+# moar
+ok 3 123
+
+1..3

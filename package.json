@@ -1,0 +1,39 @@
+{
+  "name": "tap-exit-code",
+  "version": "1.0.0",
+  "description": "Receives streaming TAP, passes it through, and sets the process exit code to 1 if there are any failing tests.",
+  "keywords": [
+    "TAP",
+    "reporter",
+    "set",
+    "exit",
+    "code",
+    "failing",
+    "tests",
+    "1",
+    "cli",
+    "stream"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m59peacemaker/node-tap-exit-code"
+  },
+  "author": {
+    "name": "Johnny Hauser",
+    "email": "johnnyhauser@gmail.com"
+  },
+  "license": "VOL",
+  "dependencies": {
+    "duplexer": "^0.1.1",
+    "tap_parser": "^1.0.3",
+    "throo": "^1.0.0",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "tape": "^4.6.2"
+  }
+}
