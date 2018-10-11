@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const exitCode = require('../../')
+const tapExitCode = require('../')
 
 process.stdin
-  .pipe(exitCode())
+  .pipe(tapExitCode())
   .pipe(process.stdout)
