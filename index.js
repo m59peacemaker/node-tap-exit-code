@@ -5,7 +5,7 @@ const duplex = require('duplexer')
 const setCode = () => {
   let hasFailingTest = false
   return through((push, chunk, enc, cb) => {
-    if (chunk.type === 'test' && chunk.parsed.ok === false) {
+    if (chunk.type === 'bailout' || (chunk.type === 'test' && chunk.parsed.ok === false)) {
       hasFailingTest = true
     }
     push(chunk.value + '\n')
