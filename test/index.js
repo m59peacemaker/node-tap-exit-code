@@ -19,3 +19,11 @@ test('exitCode 1 if any tests fail', t => {
     .pipe(p.stdin)
   p.on('close', exitCode => t.equal(exitCode, 1))
 })
+
+test('exitCode 1 if the tests bail out', t => {
+  t.plan(1)
+  const p = spawn(cmdPath)
+  fs.createReadStream(joinPath(__dirname, 'fixtures/bail-out.tap'))
+    .pipe(p.stdin)
+  p.on('close', exitCode => t.equal(exitCode, 1))
+})
