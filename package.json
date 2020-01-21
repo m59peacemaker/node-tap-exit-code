@@ -1,6 +1,6 @@
 {
   "name": "tap-exit-code",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Receives streaming TAP, passes it through, and sets the process exit code to 1 if there are any failing tests.",
   "keywords": [
     "TAP",
